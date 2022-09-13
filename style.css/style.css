@@ -49,7 +49,7 @@ a {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.navbar__login {
+.navbar__login, .burger-menu__login {
     border:none;
     background-color: transparent;
     font-family: 'Inter', sans-serif;
@@ -57,7 +57,7 @@ a {
 }
 
 
-.navbar__try {
+.navbar__try, .burger-menu__try {
     border-radius: 3px;
     border: none;
     background-color: #ECE5FF;
@@ -67,11 +67,11 @@ a {
     z-index: 4;
 }
 
-.navbar__login:hover {
+.navbar__login:hover, .burger-menu__login:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.navbar__try:hover {
+.navbar__try:hover, .burger-menu__try:hover {
     cursor: pointer;
     background-color: #796EFF;
     color: white;
@@ -83,7 +83,6 @@ a {
 
 .navbar__try:active {
     box-shadow: 6px 5px 14px 0px rgba(0,0,0,0.54);
-
 }
 
 /* header  */
@@ -92,12 +91,8 @@ a {
     margin: auto;
 }
 
-.header__btn_slider {
-    border: 2px solid purple;
-    width: 200px;
-    margin: auto;
-    margin-top: 50px;
-
+.header__button_get {
+    display: none;
 }
 
 .header__desc {
@@ -119,7 +114,7 @@ a {
 }
 
 .email {
-    left: 480px;
+    left: 33%;
     padding-right: 50px;
     position: absolute;
     width: 300px;
@@ -141,7 +136,7 @@ a {
 }
 
 .header__enter_btn {
-    right: 480px;
+    right: 33%;
     position: absolute;
     height: 50px;
     border-radius: 3px;
@@ -161,6 +156,14 @@ a {
 .header__graph {
     width: 85%;
     margin: auto;
+}
+
+.header__graph_photo {
+    width: 100%
+}
+
+.graph__left_photo {
+    width: 60%;
 }
 
 .header__end_desc {
@@ -218,7 +221,7 @@ a {
 
 .header2__var {
     border-top: 1px solid #f0ebfa;
-    width: 65%;
+    width: 100%;
     padding-left: 20px;
     padding-bottom: 15px;
 }
@@ -283,6 +286,10 @@ a {
 
 .services__item p {
     margin-top: 3%;
+}
+
+.services__btn {
+    display: none;
 }
 
 .container-minor__graph {
@@ -387,7 +394,8 @@ a {
     cursor: pointer;
 }
 
-.developers__apps {
+
+.developers__apps, .developers__apps2 {
     background-color: #796EFF;
     width: 85%;
     height: 170px;
@@ -398,6 +406,11 @@ a {
     justify-content: space-around;
     color: white;
     font-size: 32px;
+}
+
+
+.developers__apps2 {
+    display: none;
 }
 
 .developers__apps p {
@@ -413,6 +426,7 @@ footer {
     background-color: #1D2830;
     color: white;
     font-family: 'Inter', sans-serif;
+    width: 100%;
 }
 
 .footer__main {
@@ -475,6 +489,9 @@ footer li:hover {
     cursor: pointer;
 } 
 
+.instal__app {
+    display: none;
+}
 /* button slider  */
 
 .knobs,
@@ -552,7 +569,7 @@ position: absolute;
 
 #button-1 .checkbox:checked + .knobs:before {
   content: "Saved";
-  left: 145px;
+  left: 157px;
   background-color: #81C43B;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -562,3 +579,10 @@ position: absolute;
   content: " ";
 }
 
+.burger-menu {
+    display: none;
+}
+
+.navbar__btn_burger {
+    display: none;
+}
